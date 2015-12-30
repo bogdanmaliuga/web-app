@@ -1,0 +1,16 @@
+<template name="messages">
+   
+    {{#each messages}}
+    <span class="label label-success">{{location}}</span>
+    <span class="label label-primary">{{name}}</span>       
+    <span class="label label-default">{{timeNow}}</span>: 
+    <span class="label label-info">{{messageText}}</span>
+    <br>
+  {{/each}}
+    
+</template>
+
+
+<template name="input">
+  <p>Message: <input type="text"  id="message"> <button id="sendButton" class="btn btn-primary">Send</button></p>
+</template>
